@@ -36,7 +36,7 @@ function snapCracklePrime(maxValue){
                 }
             }
             let total = array.reduce((valor1, valor2)=> valor1 + valor2, 0)
-            if (total < 0){
+            if (total < 0 || counter === 1){
                 resultado.push('Snap');
             } else {
                 resultado.push('SnapPrime');
